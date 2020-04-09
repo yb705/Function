@@ -1,0 +1,11 @@
+In [9]: a=5
+
+In [10]: isinstance(a,int)
+Out[10]: True
+In [11]: isinstance(a,(int,str))
+Out[11]: True
+
+In [12]: b=4.5
+
+In [13]: isinstance(b,(str,float))
+Out[13]: True
