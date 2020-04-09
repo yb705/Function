@@ -1,0 +1,9 @@
+In [5]: a=5
+
+In [6]: type(a)#在ipython编译器中输出数据类型
+Out[6]: int
+
+In [7]: a='foo'
+
+In [8]: type(a)
+Out[8]: str
