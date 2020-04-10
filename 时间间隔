@@ -1,0 +1,8 @@
+In [66]: from datetime import datetime
+In [67]: dt=datetime(2011,10,29,20,30,21)#年，月，日，时，分，秒
+In [68]: dt2=datetime(2011,11,15,22,30)
+In [69]: delta=dt2-dt
+In [70]: delta
+Out[70]: datetime.timedelta(days=17, seconds=7179)#时间间隔为17天又7179秒
+In [71]: dt+delta#时间相加成新的时间
+Out[71]: datetime.datetime(2011, 11, 15, 22, 30)
