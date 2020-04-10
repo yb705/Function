@@ -1,0 +1,12 @@
+In [43]: a=[1,2,3,4]
+In [44]: len(a)#列表长度
+Out[44]: 4
+In [45]: b="a,b c v r v"
+In [46]: b.count(v)
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-46-730ab048f019> in <module>
+----> 1 b.count(v)
+NameError: name 'v' is not defined
+In [47]: b.count("v")#字符串某字符的个数
+Out[47]: 2
