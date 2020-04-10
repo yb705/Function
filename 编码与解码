@@ -1,0 +1,10 @@
+In [54]: a="espase 00 1 ,"
+In [55]: a
+Out[55]: 'espase 00 1 ,'
+In [60]: a_utf16=a.encode('utf-16')#编码
+In [61]: a_utf16
+Out[61]: b'\xff\xfee\x00s\x00p\x00a\x00s\x00e\x00 \x000\x000\x00 \x001\x00 \x00,
+\x00'
+In [63]: a_relase=a_utf16.decode('utf-16')#解码
+In [64]: a_relase
+Out[64]: 'espase 00 1 ,'
