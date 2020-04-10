@@ -8,5 +8,5 @@ NameError                                 Traceback (most recent call last)
 <ipython-input-46-730ab048f019> in <module>
 ----> 1 b.count(v)
 NameError: name 'v' is not defined
-In [47]: b.count("v")#字符串某字符的个数
+In [47]: b.count("v")#字符串（列表，元组）中某字符的个数
 Out[47]: 2
