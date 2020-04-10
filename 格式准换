@@ -1,0 +1,6 @@
+元组用tuple
+列表用list
+字符用str
+浮点用float
+整形用int
+布尔用bool(true,false)
