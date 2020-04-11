@@ -1,0 +1,6 @@
+In [16]: value=['bicycle','taxi','bus','plane']
+In [17]: traffic_tools={}
+In [19]: for v,i in enumerate(value):#在对列表进行遍历的过程中对元素进行追踪索引
+    ...:     traffic_tools[i]=v
+In [20]: traffic_tools
+Out[20]: {'bicycle': 0, 'taxi': 1, 'bus': 2, 'plane': 3}
