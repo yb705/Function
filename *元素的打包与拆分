@@ -1,0 +1,24 @@
+In [1]: value=['taxi','plane','bicycle','walk','bus']
+In [3]: key=['one','two','three','four']
+In [4]: traffic_tools=zip(value,key)#对元素进行配对打包，生成的列表长度有最短的序列决定
+In [5]: traffic_tools#
+Out[5]: <zip at 0x38a5fa8>#zip 方法在 Python 2 和 Python 3 中的不同
+In [6]: list(traffic_tools)#在 Python 3.x 中为了减少内存，zip() 返回的是一个对象。如需展示列表，需手动 list() 转换。
+Out[6]: [('taxi', 'one'), ('plane', 'two'), ('bicycle', 'three'), ('walk', 'four')]
+In [19]: list(traffic_tools)
+Out[19]: []#返回的对象只能遍历一次，要想使用需重新赋值
+In [22]: traffic_tools=list(zip(value,key))
+In [23]: traffic_tools
+Out[23]: [('taxi', 'one'), ('plane', 'two'), ('bicycle', 'three'), ('walk', 'for')]
+In [24]: value_1,key_2=zip(*traffic_tools)#要想对元素进行拆分需要用*
+In [25]: value_1
+Out[25]: ('taxi', 'plane', 'bicycle', 'walk')
+In [26]: key_2
+Out[26]: ('one', 'two', 'three', 'four')
+In [27]: for i,(a,b) in enumerate(traffic_tools):#为多个列表进行遍历，有时会与eunmerate同时使用提供索引
+    ...:     print('{0}:{1},{2}'.format(i,a,b))
+    ...:
+0:taxi,one
+1:plane,two
+2:bicycle,three
+3:walk,four
