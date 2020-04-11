@@ -1,0 +1,50 @@
+In [23]: traffic_tools
+Out[23]: [('taxi', 'one'), ('plane', 'two'), ('bicycle', 'three'), ('walk', 'four')]
+In [28]: dir(traffic_tools)#对元素的属性与可执行的方法进行列举
+Out[28]:
+['__add__',
+ '__class__',#类
+ '__contains__',
+ '__delattr__',
+ '__delitem__',
+ '__dir__',
+ '__doc__',
+ '__eq__',
+ '__format__',#格式化
+ '__ge__',
+ '__getattribute__',
+ '__getitem__',
+ '__gt__',
+ '__hash__',
+ '__iadd__',
+ '__imul__',
+ '__init__',#自己属性
+ '__init_subclass__',
+ '__iter__',#可迭代对象，说明可以对其进行next（）操作，即下一步操作，包括遍历，循环等
+ '__le__',
+ '__len__',
+ '__lt__',
+ '__mul__',
+ '__ne__',
+ '__new__',
+ '__reduce__',
+ '__reduce_ex__',
+ '__repr__',
+ '__reversed__',
+ '__rmul__',
+ '__setattr__',
+ '__setitem__',
+ '__sizeof__',
+ '__str__',
+ '__subclasshook__',
+ 'append',#可执行尾部添加元素的操作
+ 'clear',
+ 'copy',#可实行复制操作
+ 'count',#元素出现次数记数
+ 'extend',#列表连结
+ 'index',
+ 'insert',#元素插入
+ 'pop',#返回元素删除
+ 'remove',#元素指定对象删除
+ 'reverse',#排序颠倒
+ 'sort']#排序顺序
