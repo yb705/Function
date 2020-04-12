@@ -1,0 +1,11 @@
+In [1]: key=[1,2,3,4,5]
+In [2]: value=['bicycle','taxi','bus','plane','boat']
+In [3]: traffic_tools={}
+In [4]: for a,b in zip(key,value):
+   ...:     traffic_tools[a]=b#常规遍历生成
+   ...:
+In [5]: traffic_tools
+Out[5]: {1: 'bicycle', 2: 'taxi', 3: 'bus', 4: 'plane', 5: 'boat'}
+In [6]: c=dict(zip(key,value))#可以接受2-元元素列表直接生成字典
+In [7]: c
+Out[7]: {1: 'bicycle', 2: 'taxi', 3: 'bus', 4: 'plane', 5: 'boat'}
