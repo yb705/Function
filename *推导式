@@ -1,0 +1,19 @@
+In [36]: value
+Out[36]: ['bicycle', 'taxi', 'bus', 'plane', 'boat']
+In [37]: e=[element for element in value if 'e' in element]#类似于条件嵌套，这种推导式可使用于列表，元组，集合等
+In [38]: e
+Out[38]: ['bicycle', 'plane']
+In [39]: length=[len(element) for element in value]#可直接用于对象本身做出修改
+In [40]: length
+Out[40]: [7, 4, 3, 5, 4]
+In [41]: set(map(len,value))#map函数有映射功能，会根据提供的函数对指定序列做映射（function,iterable....）
+Out[41]: {3, 4, 5, 7}
+In [42]: some_tuple=[(1,2,3),(3,4,5,),(6,8)]
+In [45]: flattened=(element for tup in some_tuple for element in tup)#整数元组列表扁平化
+In [46]: flattened
+Out[46]: <generator object <genexpr> at 0x037F6BF0>#生成了一个迭代器对象
+In [50]: list(flattened)#列表化可直接查看
+Out[50]: [1, 2, 3, 3, 4, 5, 6, 8]
+In [47]: flattened=[element for tup in some_tuple for element in tup]#或者直接生成列表也可以
+In [48]: flattened
+Out[48]: [1, 2, 3, 3, 4, 5, 6, 8]
