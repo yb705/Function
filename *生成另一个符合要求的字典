@@ -1,3 +1,4 @@
+In [2]: value=['bicycle','taxi','bus','plane','boat']
 In [8]: traffic_tools={}
 In [9]: for tool in value:
    ...:     letter=tool[0]
