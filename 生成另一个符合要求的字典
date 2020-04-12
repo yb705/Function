@@ -1,0 +1,15 @@
+In [8]: traffic_tools={}
+In [9]: for tool in value:
+   ...:     letter=tool[0]
+   ...:     traffic_tools.setdefault(letter,[]).append(tool)#用setdefault生成以letter为键值的集合元素字典
+In [10]: traffic_tools
+Out[10]: {'b': ['bicycle', 'bus', 'boat'], 't': ['taxi'], 'p': ['plane']}
+In [11]: from collections import defaultdict#用内置模块defaultdict达到同样的效果
+In [12]: traffic_tools={}
+In [15]: traffic_tools=defaultdict(list)
+In [16]: for tool in value:
+    ...:     traffic_tools[tool[0]].append(tool)
+In [17]: traffic_tools
+Out[17]:
+defaultdict(list,
+            {'b': ['bicycle', 'bus', 'boat'], 't': ['taxi'], 'p': ['plane']})
