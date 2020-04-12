@@ -9,9 +9,9 @@ Out[40]: [7, 4, 3, 5, 4]
 In [41]: set(map(len,value))#map函数有映射功能，会根据提供的函数对指定序列做映射（function,iterable....）
 Out[41]: {3, 4, 5, 7}
 In [42]: some_tuple=[(1,2,3),(3,4,5,),(6,8)]
-In [45]: flattened=(element for tup in some_tuple for element in tup)#整数元组列表扁平化
+In [45]: flattened=(element for tup in some_tuple for element in tup)#整数元组列表扁平化，但由于是（）所以生成的是一个生成器表达式
 In [46]: flattened
-Out[46]: <generator object <genexpr> at 0x037F6BF0>#生成了一个迭代器对象
+Out[46]: <generator object <genexpr> at 0x037F6BF0>#生成了一个迭代器对象（生成器表达式），很多情况下，生成器表达式可以作为函数参数使用
 In [50]: list(flattened)#列表化可直接查看
 Out[50]: [1, 2, 3, 3, 4, 5, 6, 8]
 In [47]: flattened=[element for tup in some_tuple for element in tup]#或者直接生成列表也可以
