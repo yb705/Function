@@ -1,0 +1,7 @@
+In [64]: def add(a,b):
+    ...:     yield a+b
+In [65]: c=add(1,2)
+In [66]: c
+Out[66]: <generator object add at 0x040A83F0>#将函数中的return换成yield就生成了一个生成器
+#推导式中将[]换成（）也可以生成一个生成器表达式，详看*推导式
+#可迭代对象就是包括集合数据类型（list、tuple、dict、set、str等）和生成器（generator）
